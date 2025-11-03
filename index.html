@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Matrix Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Risk Matrix Generator for Cloud Service Models</h1>
+    <div class="container">
+        <form id="risk-form">
+            <label for="service-model">Select Service Model:</label>
+            <select id="service-model" name="service-model">
+                <option value="IaaS">IaaS (Infrastructure as a Service)</option>
+                <option value="PaaS">PaaS (Platform as a Service)</option>
+                <option value="SaaS">SaaS (Software as a Service)</option>
+            </select>
+            <label for="risk-type">Select Risk Type:</label>
+            <select id="risk-type" name="risk-type">
+                <option value="Security">Security</option>
+                <option value="Compliance">Compliance</option>
+                <option value="Operational">Operational</option>
+                <option value="Financial">Financial</option>
+            </select>
+            <label for="impact-level">Select Impact Level:</label>
+            <select id="impact-level" name="impact-level">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <label for="likelihood-level">Select Likelihood Level:</label>
+            <select id="likelihood-level" name="likelihood-level">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button id="generate-btn">Generate Risk Matrix</button>
+        </form>
+        <div id="risk-matrix"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
